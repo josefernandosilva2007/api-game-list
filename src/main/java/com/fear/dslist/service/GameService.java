@@ -18,7 +18,7 @@ public class GameService {
 
     @Autowired
     private GameRepository gameRepository;
-    
+
     @Transactional(readOnly = true)
     public List<GameMinDTO> findAll() {
         List<Game> allGames = gameRepository.findAll();
